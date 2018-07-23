@@ -184,9 +184,9 @@
 <template name="home">
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Zera Logo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <div class="center row">
-    <div class="col s4 push-s4">
+    <div class="col s4 push-s4 zeraimg">
       <div class="">
-        <img src="/logo-with-caption.png" class="responsive-img" alt="Zera" style=" margin-top:130px ;height:auto">
+        <img src="/logo-with-caption.png" class="responsive-img" alt="Zera">
       </div>
     </div>
   </div>
@@ -201,8 +201,25 @@
 
         </div>
       </div>
+
+      <!-- <button onclick="location.href='https://console.dialogflow.com/api-client/demo/embedded/pillbotver1'" type="button">
+     Visit Chatbot</button> -->
+      <!-- <iframe
+        allow="microphone;"
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/pillbotver1">
+    </iframe> -->
     </div>
   </div>
+  <div class="row">
+      <div class="col s2 push-s9 chatbar">
+        <p class="chatbot-header"> <i><strong>  Need Medical Advice?</strong> </i></p>
+  <a class="waves-effect waves-light btn chatbot-button" href="https://console.dialogflow.com/api-client/demo/embedded/pillbotver1" target="_blank"><i class="material-icons left">chat</i>View Chatbot</a>
+</div>
+</div>
+
+
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
   <div id="modal" class="modal">

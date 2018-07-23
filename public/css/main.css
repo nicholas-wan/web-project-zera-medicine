@@ -103,6 +103,18 @@
   .pricingdiv a.pricebutton{
     display: block;
   }
+  .zeraimg{
+    left:20% !important;
+    width:60% !important;
+    margin-top:100px;
+  }
+  .chatbar{
+    left:25% !important;
+    width:60% !important;
+  }
+  .chatbot-header{
+    margin-left:14px;
+  }
 }
 
 .bolder-underline{
@@ -111,4 +123,12 @@
   font-family:open;
   font-style:italic;
   margin-right:2000px;
+}
+@media screen and (min-width: 800px) {
+.chatbot-header{
+  margin-left:10px;
+}
+.zeraimg{
+  margin-top:100px;
+}
 }
