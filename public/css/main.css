@@ -10,8 +10,7 @@
 
 .-autocomplete-container {
   margin-top:30px;
-  margin-left: 15px;
-  }
+}
 
 
 .pricingdiv{
@@ -88,7 +87,7 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .pricingdiv ul.theplan{
     border-radius: 0;
     width: 100%;
@@ -104,8 +103,8 @@
     display: block;
   }
   .zeraimg{
-    left:20% !important;
-    width:60% !important;
+    left:15% !important;
+    width:70% !important;
     margin-top:100px;
   }
   .chatbar{
@@ -114,6 +113,11 @@
   }
   .chatbot-header{
     margin-left:14px;
+    margin-top:150px;
+  }
+  .searchbar{
+    left:12% !important;
+    width:75% !important;
   }
 }
 
@@ -125,10 +129,13 @@
   margin-right:2000px;
 }
 @media screen and (min-width: 800px) {
-.chatbot-header{
-  margin-left:10px;
-}
-.zeraimg{
-  margin-top:100px;
-}
+  .chatbot-header{
+    margin-left:10px;
+  }
+  .zeraimg{
+    margin-top:100px;
+  }
+  .-autocomplete-container{
+    margin-left:45px;
+  }
 }
