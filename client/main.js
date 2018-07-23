@@ -3,17 +3,17 @@ import { Ingredients } from '../import/api/ingredient.js';
 import { Template } from 'meteor/templating';
 
 const XLSX = require('xlsx');
-let sidenav;  
+let sidenav;
 
 
 
 Meteor.startup(function () {
   Meteor.AdminAccountsConfig = {
     adminAccountsCreateUserErrorCallback: function (error) {
-     
+
     },
     adminAccountsCreateUserSuccessCallback: function (user) {
-     
+
 
     }
   };
@@ -69,7 +69,7 @@ Template.druglist.events({
       return false;
     }
     var x = Template.druglist.__helpers.get('drugdelete').call(this);
-    
+
   }
 });
 
@@ -123,9 +123,9 @@ Template.home.onRendered(function () {
 Template.home.helpers({
   drug: function (query, sync, callback) {
     var regex = new RegExp("^" + query);
-    
+
     callback(Ingredients.find({ Product_Name: { $regex: regex } }, { _id: 0, Product_Name: 1 }).fetch().map(function (v) {
-      
+
       return v.Product_Name;
     }));
 
@@ -152,7 +152,7 @@ Template.home.helpers({
 
 Template.home.events({
   "autocompleteselect input": function (e, t, doc) {
-   
+
     Router.go('/drugdetail/' + doc.Product_Name);
   }
 
@@ -170,7 +170,7 @@ Template.detail.onRendered(function () {
   Meteor.typeahead.inject();
   Meteor.subscribe('ingredients');
   var listdata = [];
-  
+
 
 
 });
@@ -242,10 +242,10 @@ Template.detail.rendered = function(){
 };
 Template.detail.events({
   "onChipDelete":function(e){
-    
+
   },
   "click .chipclose": function (e) {
-    
+
     var index = druglist.findIndex(o => o._id === e.currentTarget.getAttribute('dataattr'));
 
     druglist.splice(index, 1);
@@ -253,7 +253,7 @@ Template.detail.events({
 
   },
   "autocompleteselect input": function (e, t, doc) {
-    
+
     var list2 = Template.instance().drug.get();
     let localdata = Ingredients.findOne({ "Product_Name": doc.Product_Name });
     if (localdata) {
@@ -291,7 +291,7 @@ Template.readingredient.events({
               searchStr += ' ' + local['Used_for'];
             }
             local['serchkey'] = searchStr;
-            
+
             Ingredients.insert(local);
 
             ///Router.go('/ingredientlist');
@@ -324,7 +324,7 @@ Template.ingredientlist.events({
       return false;
     }
     var x = Template.ingredientlist.__helpers.get('ingredientdelete').call(this);
-    
+
     // Template.instance().drugdelete(this._id);
     // console.log(this,e,tmpl);
   }
@@ -339,7 +339,7 @@ Template.product.helpers({
   drug() {
     var regex = new RegExp(Router.current().params._id);
     var sort={};
-   
+
     if(typeof (Router.current().params.query.sort_by)!= 'undefined'){
       if(Router.current().params.query.sort_by=='low'){
         sort= {Price: 1};
@@ -347,10 +347,10 @@ Template.product.helpers({
       if(Router.current().params.query.sort_by=='high'){
         sort= {Price: -1};
       }
-      
-      
+
+
     }
-   
+
     return Drugs.find({'Active_ingredients': { $regex: regex } },{sort:sort}).fetch();
   },
   ingre(){
@@ -370,8 +370,3 @@ Template.ingredientdetail.helpers({
     return Ingredients.findOne({ "_id": Router.current().params._id });
   },
 })
-
-
-
-
-

@@ -55,7 +55,6 @@
 .pricingdiv ul.theplan li.title{
   font-size: 150%;
   font-weight: bold;
-  text-align: center;
   margin-top: 20px;
   text-transform: uppercase;
   border-bottom: 5px solid white;
@@ -64,7 +63,7 @@
 .pricingdiv ul.theplan:nth-of-type(2){
   background: #e53499;
 }
-    
+
 .pricingdiv ul.theplan:nth-of-type(3){
   background: #2a2cc8;
 }
@@ -75,9 +74,8 @@
 
 /*very last LI within each pricing UL */
 .pricingdiv ul.theplan li:last-of-type{
-  text-align: center;
   margin-top: auto; /*align last LI (price botton li) to the very bottom of UL */
-}  
+}
 
 .pricingdiv a.pricebutton{
   background: white;
@@ -96,12 +94,12 @@
     width: 100%;
     margin-right: 0;
   }
-  
+
   .pricingdiv ul.theplan:hover{
     transform: none;
     box-shadow: none;
   }
-  
+
   .pricingdiv a.pricebutton{
     display: block;
   }
@@ -110,4 +108,7 @@
 .bolder-underline{
   font-size: 1.4em;
   text-decoration: underline;
+  font-family:open;
+  font-style:italic;
+  margin-right:2000px;
 }

@@ -1,13 +1,16 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <title>Accounts Admin Demo</title>
+  <title>Zera</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="z.ico" />
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/node_modules/readmore-js/readmore.min.js"></script>
+
 
 </head>
 
@@ -58,7 +61,7 @@
 
 <template name="sideNav">
   <ul id="nav-mobile" class="sidenav">
-      
+
     <div class="user-drawer">
       <div class="row">
         <div class="col s2 drawer-user-icon">
@@ -146,8 +149,8 @@
           <th>Amount</th>
           <th> Active Ingredients </th>
           <th>Description</th>
-          <th>Special Caution</th>
-          <th> Contain Dication</th>
+          <th>Caution</th>
+          <th> Containdication</th>
           <th>Action</th>
         </tr>
         {{#each druglist}}
@@ -181,7 +184,7 @@
 <template name="home">
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Zera Logo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <div class="center row">
-    <div class="col s6 push-s3">
+    <div class="col s4 push-s4">
       <div class="">
         <img src="/logo-with-caption.png" class="responsive-img" alt="Zera" style=" margin-top:130px ;height:auto">
       </div>
@@ -195,7 +198,7 @@
         <div class="input-field col s6 s12 red-text">
           <i class="red-text material-icons prefix">search</i>
             {{> inputAutocomplete settings=settings id="msg" class="input-xlarge" placeholder="Search Drug"}}
-        
+
         </div>
       </div>
     </div>
@@ -240,7 +243,7 @@
     <div class="row">
       <div class="pricingdiv">
         {{#each drug}}
-        
+
         <ul class="theplan" style="width:{{druglength}}%">
           <li class="title">
             <b>{{this.Product_Name}}</b>
@@ -248,7 +251,7 @@
           <li>
             <b class="bolder-underline">Classification:</b> {{this.Classification}}</li>
           <li>
-            <b class="bolder-underline">General Description:</b> {{this.General_description}}</li>
+            <b class="bolder-underline">Description:</b> {{this.General_description}}</li>
           <li>
             <b class="bolder-underline">Upsides:</b>{{this.Upsides}}</li>
           <li>
@@ -258,7 +261,7 @@
           <li>
             <b class="bolder-underline">Dosage_forms:</b> {{iconconvert(this.Dosage_forms)}}</li>
           <li>
-            <b class="bolder-underline">Side Effects:</b> {{this.Side_Effects}}</li>
+            <b class="bolder-underline">Side_Effects:</b> {{this.Side_Effects}}</li>
           <li>
             <a class="pricebutton" href="/product/{{this.Product_Name}}" rel="nofollow">
               <span class="icon-tag"></span> View Product</a>
@@ -296,19 +299,19 @@
   <div class="section no-pad-bot main plainbg">
     <div class="container">
       <h5>Active Ingredient List</h5>
-     
+
       <table class="responsive-table">
         <tr>
           <th> Product Name</th>
           <th>Classification</th>
-        
+
           <th>Action</th>
         </tr>
         {{#each ingredientlist}}
         <tr>
           <td> {{Product_Name}}</td>
           <td> {{Classification}}</td>
-          
+
         <td>
             <a class="waves-effect indigo btn" href="/ingredetail/{{_id}}">View</a>
           <button class="waves-effect red btn ingredientdelete" dataatr="{{_id}}">Delete</button></td>
@@ -341,13 +344,13 @@
         <li>
           <b class="bolder-underline">Amount:</b> {{this.Amount}}</li>
         <li>
-          <b class="bolder-underline">Active Ingredient:</b> {{this.Active_ingredients}}</li>
+          <b class="bolder-underline">Ingredient:</b> {{this.Active_ingredients}}</li>
           <li>
-            <b class="bolder-underline">Special catution</b>{{this.Special_catuion}}
+            <b class="bolder-underline">Caution:</b>{{this.Special_catuion}}
           </li>
-    
+
           <li>
-          <b class="bolder-underline">Contrain Dication</b>{{this.Contrain_dication}}
+          <b class="bolder-underline">Contraindication:</b>{{this.Contrain_dication}}
         </li>
 
       </ul>
@@ -364,7 +367,7 @@
      <ul id="nav-mobile" class="right">
         <li>
           <a href="/home">Home</a>
-          
+
         </li>
 
       </ul>
@@ -385,12 +388,12 @@
         <h2>{{ingredientlist.Product_Name}} Detail</h2>
         <table class="responsive-table">
           <tr><td> <b>Product Name</b></td><td>{{ingredientlist.Product_Name}}</td></tr>
-          <tr> <td><b> Classification</b></td><td>{{ingredientlist.Classification}}</td></tr>  
+          <tr> <td><b> Classification</b></td><td>{{ingredientlist.Classification}}</td></tr>
           <tr><td><b>General description</b></td><td>{{ingredientlist.General_description}}</td></tr>
           <tr> <td><b>Upsides</b></td><td> {{ingredientlist.Upsides}}</td></tr>
           <tr><td><b>Downsides</b></td><td>{{ingredientlist.Downsides}}</td></tr>
           <tr><td><b> Used for</b></td><td> {{ingredientlist.Used_for}}</td></tr>
-          <tr> <td><b> Dosage forms</b></td><td>{{ingredientlist.Side_Effects}}</td></tr> 
+          <tr> <td><b> Dosage forms</b></td><td>{{ingredientlist.Side_Effects}}</td></tr>
           <tr> <td><b> Side Effects</b></td><td>{{ingredientlist.Side_Effects}}</td></tr>
           <tr> <td><b> Contraindication</b></td><td>{{ingredientlist.Contraindication}}</td></tr>
           <tr> <td><b>Risk and Risk Factors</b></td><td> {{ingredientlist.Risk_and_Risk_Factors}}</td></tr>
@@ -401,6 +404,6 @@
     <div class="section no-pad-bot main plainbg">
       {{> welcomePleaseLogin}}
     </div>
-  
+
     {{/if}}
   </template>
