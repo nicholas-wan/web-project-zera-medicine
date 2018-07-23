@@ -1,0 +1,131 @@
+@brand-primary:#29b6f6;
+@brand-primary-darker: darken(@brand-primary, 20%);
+
+@drawerColour: @brand-primary-darker;
+@drawerUsernameText: white;
+@drawerUserIcon: white;
+
+// colours for brand-primary-bg buttons
+.brand-primary-bg {
+  background-color: @brand-primary;
+
+  &.btn-floating:hover {
+    background-color: @brand-primary-darker;
+  }
+}
+
+// colours for all buttons
+.btn {
+  background-color: @brand-primary;
+
+  &:hover {
+    background-color: @brand-primary-darker;
+  }
+}
+
+/* ## NAVBAR ## */
+nav .brand-logo {
+  font-size: 1.5em;
+}
+
+/* ## DRAWER CSS ## */
+
+div .user-drawer .row { //Drawer header container
+  margin-bottom: 0;
+}
+
+div .side-nav .btn { //Sign out button
+  border-radius: 0; //Remove rounded corners
+}
+
+.user-drawer { //Entire drawer header container
+  padding: 0 10px 0 10px;
+  width: 100%;
+  background-color: @drawerColour;
+  background-image: url('/user_drawer_material_background.jpg');
+  background-size: cover;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+  height: 64px;
+
+  .row:first-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.user-drawer .fa { //Icons next to drawer user items
+}
+
+.drawer-header-entity {
+  padding-top: 15px;
+}
+
+.user-drawer .row .drawer-header-entity-below {
+  padding: 0 0 0 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.drawer-username-text {
+  padding-left: 10px;
+  color: @drawerUsernameText;
+  //font-size: 1.5em;
+  text-transform: capitalize; //OCD activated
+  overflow: visible;
+}
+
+.drawer-chip-text {
+  font-size: 0.8em;
+}
+
+.drawer-user-icon {
+  color: @drawerUserIcon;
+  font-size: 2.5em;
+}
+
+// sign out button
+.sign-out {
+  width: 100%;
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+}
+
+// login form header
+.at-title h3.header {
+  font-size: 1.5em;
+}
+
+// #### Form input highlights
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid @brand-primary;
+  -webkit-box-shadow: 0 1px 0 0 @brand-primary;
+  box-shadow: 0 1px 0 0 @brand-primary;
+}
+
+// ### label colours
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+  color: @brand-primary;
+}
+
+.chp-pill{
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #e4e4e4;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.chp-pill .close {
+  cursor: pointer;
+    float: right;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 8px;
+}

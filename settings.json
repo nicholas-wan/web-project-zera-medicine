@@ -1,0 +1,88 @@
+{
+  "public": {
+    "accountsAdmin": {
+      "rolesHierarchy": {
+        "roleName": "admin",
+        "subordinates": [
+          {
+            "roleName": "user-admin",
+            "subordinates": [
+              {
+                "roleName": "user",
+                "visibleUserFields": {
+                  "_id": 1,
+                  "username": 1,
+                  "profile.name": 1,
+                  "profile.firstname": 1,
+                  "profile.surname": 1,
+                  "profile.contactDetails.emailAddress": 1,
+                  "profile.contactDetails.mobilePhone": 1,
+                  "roles": 1,
+                  "emails": 1
+                }
+              }
+            ],
+            "defaultNewUserRoles": [
+              "user"
+            ]
+          }
+        ],
+        "defaultNewUserRoles": [
+          "user-admin"
+        ]
+      },
+      "whitelistedUserProperties": [
+        "profile.firstname",
+        "profile.surname",
+        "profile.contactDetails.mobilePhone",
+        "profile.contactDetails.emailAddress",
+        "roles"
+      ]
+    },
+    "accountsTemplates": {
+      "confirmPassword": true,
+      "enablePasswordChange": true,
+      "forbidClientAccountCreation": true,
+      "overrideLoginErrors": true,
+      "sendVerificationEmail": true,
+      "lowercaseUsername": false,
+      "focusFirstInput": true,
+      "showAddRemoveServices": false,
+      "showForgotPasswordLink": true,
+      "showLabels": true,
+      "showPlaceholders": true,
+      "showResendVerificationEmailLink": true,
+      "continuousValidation": false,
+      "negativeFeedback": false,
+      "negativeValidation": true,
+      "positiveValidation": true,
+      "positiveFeedback": true,
+      "showValidating": true,
+      "texts": {
+        "button": {
+          "signUp": "Register Now!"
+        },
+        "socialSignUp": "Register",
+        "socialIcons": {
+          "meteor-developer": "fa fa-rocket"
+        },
+        "title": {
+          "forgotPwd": "Recover Your Password"
+        }
+      }
+    }
+  },
+  "defaultUserAccount":{ 
+    "username": "admin", 
+    "email": "admin@example.com", 
+    "password": "password123", 
+    "profile": { 
+      "firstname": "Admin", 
+      "surname": "User", 
+      "contactDetails": { 
+        "mobilePhone": "0411111111", 
+        "emailAddress": "admin@example.com"
+      }
+    }
+  }
+}

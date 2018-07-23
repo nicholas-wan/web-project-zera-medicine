@@ -1,0 +1,14 @@
+{
+  "name": "accountsadmin",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.46",
+    "bcrypt": "^2.0.1",
+    "meteor-node-stubs": "^0.3.2",
+    "simpl-schema": "^1.5.0",
+    "xlsx": "^0.13.0"
+  }
+}

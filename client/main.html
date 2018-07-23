@@ -1,0 +1,406 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Accounts Admin Demo</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- {{>nav}} -->
+  <!-- {{> main}} -->
+</body>
+
+<template name="main">
+  {{#if currentUser}} {{>nav}}
+  <div class="section no-pad-bot main plainbg">
+    {{> accountsAdmin}}
+  </div>
+  {{else}}
+  <div class="section no-pad-bot main plainbg">
+    {{> welcomePleaseLogin}}
+  </div>
+  {{/if}}
+</template>
+
+<template name="nav">
+  <nav class="light-blue lighten-1 top-nav" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger show-on-large">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/read">Drug Upload</a>
+          </li>
+          <li>
+            <a href="/druglist">Druglist</a>
+          </li>
+          <li>
+            <a href="/readingredient">Ingredient Upload</a>
+          </li>
+          <li>
+          <a href="/ingredientlist">Ingredient List</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  {{> sideNav}}
+</template>
+
+<template name="sideNav">
+  <ul id="nav-mobile" class="sidenav">
+      
+    <div class="user-drawer">
+      <div class="row">
+        <div class="col s2 drawer-user-icon">
+          <i class="fa fa-user"></i>
+        </div>
+        <div class="col s8">
+          <div class="drawer-header-entity">
+            <span class="drawer-username-text">
+              {{#if currentUser}} {{currentUser.username}} {{else}} Please sign in {{/if}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/read">Drug Upload</a>
+      </li>
+      <li>
+        <a href="/druglist">Druglist</a>
+      </li>
+      <li>
+        <a href="/readingredient">Ingredient Upload</a>
+      </li>
+      <li>
+      <a href="/ingredientlist">Ingredient List</a>
+    </li>
+    {{#if currentUser}}
+    <button class="btn btn-full-width light-blue sign-out" id="signOutBtn">Sign Out</button>
+    {{/if}}
+  </ul>
+</template>
+
+<template name="welcomePleaseLogin">
+  <div class="row">
+    <div class="col s12 m6 offset-m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="/logo-with-caption.png">
+          <span class="card-title">Demo</span>
+        </div>
+        <div class="card-content">
+          <p>Please sign in to get started.</p>
+          {{> atForm}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="register">
+</template>
+
+<template name="read">
+  {{#if currentUser}} {{>nav}}
+  <div class="w3-container">
+    <div class="w3-card">
+      <form class="w3-container">
+        <p>
+          <label>Process File</label>
+          <input class="w3-input" type="file">
+        </p>
+
+      </form>
+    </div>
+  </div>
+  {{else}}
+  <div class="section no-pad-bot main plainbg">
+    {{> welcomePleaseLogin}}
+  </div>
+  {{/if}}
+</template>
+
+<template name="druglist">
+  {{#if currentUser}} {{>nav}}
+  <div class="section no-pad-bot main plainbg">
+    <div class="container">
+      <h2>Drug List</h2>
+      <table class="responsive-table">
+        <tr>
+          <th> Product Name</th>
+          <th>Price</th>
+          <th>Amount</th>
+          <th> Active Ingredients </th>
+          <th>Description</th>
+          <th>Special Caution</th>
+          <th> Contain Dication</th>
+          <th>Action</th>
+        </tr>
+        {{#each druglist}}
+        <tr>
+          <td> {{Product_Name}}</td>
+          <td> ${{Price}}</td>
+          <td> {{Amount}}</td>
+          <td> {{Active_ingredients}}</td>
+          <td> {{Description}}</td>
+          <td> {{Special_catuion}}</td>
+          <td> {{Contrain_dication}}</td>
+          <td>
+          <button class="waves-effect red btn drugdelete" dataatr="{{_id}}">Delete</button>
+          </td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+  </div>
+  {{else}}
+  <div class="section no-pad-bot main plainbg">
+    {{> welcomePleaseLogin}}
+  </div>
+
+  {{/if}}
+
+
+
+</template>
+
+<template name="home">
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Zera Logo~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <div class="center row">
+    <div class="col s6 push-s3">
+      <div class="">
+        <img src="/logo-with-caption.png" class="responsive-img" alt="Zera" style=" margin-top:130px ;height:auto">
+      </div>
+    </div>
+  </div>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Search Bar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div class="center row">
+    <div class="col s6 push-s3 ">
+      <div class="row" id="topbarsearch">
+        <div class="input-field col s6 s12 red-text">
+          <i class="red-text material-icons prefix">search</i>
+            {{> inputAutocomplete settings=settings id="msg" class="input-xlarge" placeholder="Search Drug"}}
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Modal~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h4>Disclaimer</h4>
+      <p>This is not medical advice. Please consult a medical professional if you have any doubts.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Javascript~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</template>
+
+<template name='detail'>
+    {{>frontnav}}
+  <div class="center row">
+    <div class="col s6 push-s3 ">
+      <div class="row" id="topbarsearch">
+        <div class="input-field col s6 s12 red-text">
+          <i class="red-text material-icons prefix">search</i>
+         {{> inputAutocomplete settings=settings id="msg" class="input-xlarge" placeholder="Search Drug"}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container">
+    <!-- <h2>Drug Detail</h2> -->
+    {{#each drug}}
+    <div class="chp-pill">
+      {{this.Product_Name}}
+      {{#if @index != 0}}
+      <i class="close material-icons tag chipclose" dataattr={{this._id}} >close</i>
+      {{/if}}
+    </div>
+    {{/each}}
+    <div class="row">
+      <div class="pricingdiv">
+        {{#each drug}}
+        
+        <ul class="theplan" style="width:{{druglength}}%">
+          <li class="title">
+            <b>{{this.Product_Name}}</b>
+          </li>
+          <li>
+            <b class="bolder-underline">Classification:</b> {{this.Classification}}</li>
+          <li>
+            <b class="bolder-underline">General Description:</b> {{this.General_description}}</li>
+          <li>
+            <b class="bolder-underline">Upsides:</b>{{this.Upsides}}</li>
+          <li>
+            <b class="bolder-underline">Downsides:</b>{{this.Downsides}}</li>
+          <li>
+            <b class="bolder-underline">Used_for:</b> {{this.Used_for}}</li>
+          <li>
+            <b class="bolder-underline">Dosage_forms:</b> {{iconconvert(this.Dosage_forms)}}</li>
+          <li>
+            <b class="bolder-underline">Side Effects:</b> {{this.Side_Effects}}</li>
+          <li>
+            <a class="pricebutton" href="/product/{{this.Product_Name}}" rel="nofollow">
+              <span class="icon-tag"></span> View Product</a>
+          </li>
+        </ul>
+        {{/each}}
+
+      </div>
+    </div>
+
+
+  </div>
+</template>
+
+<template name="readingredient">
+  {{#if currentUser}} {{>nav}}
+  <div class="w3-container">
+    <div class="w3-card">
+      <form class="w3-container">
+        <p>
+          <label>Process File</label>
+          <input class="w3-input" type="file">
+        </p>
+      </form>
+    </div>
+  </div>
+  {{else}}
+  <div class="section no-pad-bot main plainbg">
+    {{> welcomePleaseLogin}}
+  </div>
+  {{/if}}
+</template>
+<template name="ingredientlist">
+  {{#if currentUser}} {{>nav}}
+  <div class="section no-pad-bot main plainbg">
+    <div class="container">
+      <h5>Active Ingredient List</h5>
+     
+      <table class="responsive-table">
+        <tr>
+          <th> Product Name</th>
+          <th>Classification</th>
+        
+          <th>Action</th>
+        </tr>
+        {{#each ingredientlist}}
+        <tr>
+          <td> {{Product_Name}}</td>
+          <td> {{Classification}}</td>
+          
+        <td>
+            <a class="waves-effect indigo btn" href="/ingredetail/{{_id}}">View</a>
+          <button class="waves-effect red btn ingredientdelete" dataatr="{{_id}}">Delete</button></td>
+        </tr>
+        {{/each}}
+      </table>
+    </div>
+  </div>
+  {{else}}
+  <div class="section no-pad-bot main plainbg">
+    {{> welcomePleaseLogin}}
+  </div>
+
+  {{/if}}
+</template>
+
+<template name="product">
+  {{>frontnav}}
+  <h2>Product List</h2>
+  <a class="btn sort" href="/product/{{ingre}}?sort_by=low">Low to High</a> &nbsp;<a href="/product/{{ingre}}?sort_by=high" class="btn">High to Low</a>
+  <div class="row">
+    <div class="pricingdiv">
+      {{#each drug}}
+      <ul class="theplan">
+        <li class="title">
+          <b>{{Product_Name}}</b>
+        </li>
+        <li>
+          <b class="bolder-underline">Price:</b> ${{this.Price}}</li>
+        <li>
+          <b class="bolder-underline">Amount:</b> {{this.Amount}}</li>
+        <li>
+          <b class="bolder-underline">Active Ingredient:</b> {{this.Active_ingredients}}</li>
+          <li>
+            <b class="bolder-underline">Special catution</b>{{this.Special_catuion}}
+          </li>
+    
+          <li>
+          <b class="bolder-underline">Contrain Dication</b>{{this.Contrain_dication}}
+        </li>
+
+      </ul>
+      {{/each}}
+
+    </div>
+  </div>
+
+</template>
+
+<template name="frontnav">
+  <nav class="light-red lighten-1 top-nav" role="navigation">
+    <div class="nav-wrapper container">
+     <ul id="nav-mobile" class="right">
+        <li>
+          <a href="/home">Home</a>
+          
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+</template>
+
+<template name="userPill">
+    <span class="label {{labelClass}}">{{Product_Name}}</span>
+</template>
+
+<template name="ingredientdetail">
+    {{#if currentUser}} {{>nav}}
+    <div class="section no-pad-bot main plainbg">
+      <div class="container">
+        <h2>{{ingredientlist.Product_Name}} Detail</h2>
+        <table class="responsive-table">
+          <tr><td> <b>Product Name</b></td><td>{{ingredientlist.Product_Name}}</td></tr>
+          <tr> <td><b> Classification</b></td><td>{{ingredientlist.Classification}}</td></tr>  
+          <tr><td><b>General description</b></td><td>{{ingredientlist.General_description}}</td></tr>
+          <tr> <td><b>Upsides</b></td><td> {{ingredientlist.Upsides}}</td></tr>
+          <tr><td><b>Downsides</b></td><td>{{ingredientlist.Downsides}}</td></tr>
+          <tr><td><b> Used for</b></td><td> {{ingredientlist.Used_for}}</td></tr>
+          <tr> <td><b> Dosage forms</b></td><td>{{ingredientlist.Side_Effects}}</td></tr> 
+          <tr> <td><b> Side Effects</b></td><td>{{ingredientlist.Side_Effects}}</td></tr>
+          <tr> <td><b> Contraindication</b></td><td>{{ingredientlist.Contraindication}}</td></tr>
+          <tr> <td><b>Risk and Risk Factors</b></td><td> {{ingredientlist.Risk_and_Risk_Factors}}</td></tr>
+        </table>
+      </div>
+    </div>
+    {{else}}
+    <div class="section no-pad-bot main plainbg">
+      {{> welcomePleaseLogin}}
+    </div>
+  
+    {{/if}}
+  </template>
