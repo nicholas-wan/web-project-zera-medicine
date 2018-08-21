@@ -62,11 +62,16 @@
 .pricingdiv ul.theplan:nth-of-type(2){
   background: #e53499;
 }
+.pricingdiv ul.theplan1:nth-of-type(2){
+  background: #7c3ac9 !important;
+}
 
 .pricingdiv ul.theplan:nth-of-type(3){
   background: #2a2cc8;
 }
-
+.pricingdiv ul.theplan1:nth-of-type(3){
+  background: #7c3ac9 !important ;
+}
 .pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
   margin-right: 0;
 }
