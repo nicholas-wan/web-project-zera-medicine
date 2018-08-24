@@ -9,7 +9,7 @@ No installation or downloads are required!
 Visit our telegram bot at for medical advice,
 then proceed to our [Web Application](http://zera.herokuapp.com/home) to select the best medication for your needs!
 
-![alt text](http://url/to/img.png(https://preview.ibb.co/b7hS59/homepage.jpg)
+![homepage](https://user-images.githubusercontent.com/36837883/44577347-6fbe3d80-a7c3-11e8-8482-e0e58b220ea4.JPG)
 
 ## Built With
 * [Dialogflow](https://dialogflow.com/) - Framework for chatbot
