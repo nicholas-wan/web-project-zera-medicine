@@ -106,6 +106,7 @@
 
   .pricingdiv a.pricebutton{
     display: block;
+    text-align:center;
   }
   .zeraimg{
     left:15% !important;
