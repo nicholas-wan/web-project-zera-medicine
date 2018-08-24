@@ -31,7 +31,7 @@
   color: black;
   background: white;
   position: relative;
-  width: 250px; /* width of each table */
+  width: 350px; /* width of each table */
   margin-right: 10px; /* spacing between tables */
   margin-bottom: 1em;
   transition: all .5s;
@@ -167,3 +167,4 @@ html, body{
     width:100% !important;
   }
 }
+#more {display: none;}
