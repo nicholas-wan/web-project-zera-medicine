@@ -10,15 +10,10 @@ let sidenav;
 Meteor.startup(function () {
   Meteor.AdminAccountsConfig = {
     adminAccountsCreateUserErrorCallback: function (error) {
-
     },
     adminAccountsCreateUserSuccessCallback: function (user) {
-
-
     }
   };
-
-
 });
 
 Template.nav.onRendered(function(){
@@ -87,7 +82,7 @@ Template.read.events({
         if (err) console.error(err);
         else {
           let keys = ['Product_Name', 'Price', 'Amount', 'Active_ingredients', 'Description',
-            'Special_catuion', 'Contrain_dication'];
+            'Special_caution', 'Contraindication'];
 
           var list = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1 });
           for (var i = 1; i < list.length; i++) {
@@ -112,12 +107,7 @@ Array.prototype.associate = function (keys) {
 };
 Template.home.onRendered(function () {
   Meteor.typeahead.inject();
-
-
-
 });
-
-
 
 
 Template.home.helpers({
@@ -317,7 +307,11 @@ Template.ingredientlist.helpers({
     M.toast({ html: this.Product_Name + " has been removed." });
   }
 });
-
+Template.ingredientlist.helpers({
+  completedelete(){
+    Ingredients.remove({})
+  }
+})
 Template.ingredientlist.events({
   "click .ingredientdelete": function (e, tmpl) {
     if (!confirm("Are you sure? This record will be removed permanently.")) {

@@ -21,7 +21,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
   flex-direction: column;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -132,7 +131,7 @@
   text-decoration: underline;
   font-family:open;
   font-style:italic;
-  margin-right:2000px;
+  display:block;
   color:purple;
 }
 @media screen and (min-width: 800px) {
@@ -154,3 +153,7 @@ html, body{
 .input-xlarge{
   color:purple;
 }
+/* li::before {
+    content:"\a";
+    white-space:pre;
+} */

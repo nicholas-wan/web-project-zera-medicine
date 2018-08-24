@@ -160,8 +160,8 @@
           <td> {{Amount}}</td>
           <td> {{Active_ingredients}}</td>
           <td> {{Description}}</td>
-          <td> {{Special_catuion}}</td>
-          <td> {{Contrain_dication}}</td>
+          <td> {{Special_caution}}</td>
+          <td> {{Contraindication}}</td>
           <td>
           <button class="waves-effect red btn drugdelete" dataatr="{{_id}}">Delete</button>
           </td>
@@ -278,11 +278,15 @@
           <li>
             <b class="bolder-underline">Downsides:</b>{{this.Downsides}}</li>
           <li>
-            <b class="bolder-underline">Used_for:</b> {{this.Used_for}}</li>
+            <b class="bolder-underline">Used for:</b> {{this.Used_for}}</li>
           <li>
-            <b class="bolder-underline">Dosage_forms:</b> {{iconconvert(this.Dosage_forms)}}</li>
+            <b class="bolder-underline">Dosage forms:</b> {{iconconvert(this.Dosage_forms)}}</li>
           <li>
-            <b class="bolder-underline">Side_Effects:</b> {{this.Side_Effects}}</li>
+            <b class="bolder-underline">Side Effects:</b> {{this.Side_Effects}}</li>
+          <li>
+            <b class="bolder-underline">Contraindication:</b> {{this.Contraindication}}</li>
+          <li>
+            <b class="bolder-underline">Risk and Risk Factors:</b> {{this.Risk_and_Risk_Factors}}</li>
 
         </ul>
         {{/each}}
@@ -364,12 +368,12 @@
         <li>
           <b class="bolder-underline">Ingredient:</b> {{this.Active_ingredients}}</li>
           <li>
-            <b class="bolder-underline">Caution:</b>{{this.Special_catuion}}
+            <b class="bolder-underline">Caution:</b>{{this.Special_caution}}
           </li>
-
           <li>
-          <b class="bolder-underline">Contraindication:</b>{{this.Contrain_dication}}
+          <b class="bolder-underline">Contraindication:</b>{{this.Contraindication}}
         </li>
+
 
       </ul>
       {{/each}}
