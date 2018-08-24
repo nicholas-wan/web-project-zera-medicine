@@ -28,11 +28,11 @@ If you have the slightest doubt, please consult a Doctor or seek expert opinion.
 ## Authors
 About us: We are a group of 5 students belonging to the National University of Singapore.
 
-_Developers:_
+*Developers:*
 Jasmine Seah
 Nicholas Wan
 
-_Design & Medical information:_
+*Design & Medical information:*
 Loh Jing Han
 Hong Kai
 Alfred Sim
