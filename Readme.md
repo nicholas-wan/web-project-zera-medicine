@@ -1,6 +1,7 @@
-# Project Title
+# Zera - Introduction
+The birth of our project arises from the need to reduce the number of unnecessary visits to Doctors in Singapore. An estimated ratio of Patients to Doctors in Singapore is 400:1, and we would like to ease this burden on Doctors, as well as provide Patients with the necessary medical knowledge to make informed decisions of choosing their medication.
 
-One Paragraph of project description goes here
+Our aim is to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
 
 ## Getting Started
 
@@ -19,9 +20,10 @@ then proceed to our web application at zera.herokuapp.com/home to select the bes
 If you would like to provide feedback to us, please email me at nicholaswan@live.com.sg
 Thank you!
 
-## Versioning
+## Disclaimer
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Zera provides preliminary medical advice and you should by no means take it as the only source of opinion.
+If you have the slightest doubt, please consult a Doctor or seek expert opinion.
 
 ## Authors
 About us: We are a group of 5 students belonging to the National University of Singapore.
