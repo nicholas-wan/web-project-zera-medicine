@@ -1,7 +1,7 @@
 # Zera - Introduction
-The birth of our project arises from the need to reduce the number of unnecessary visits to Doctors in Singapore. An estimated ratio of Patients to Doctors in Singapore is 400:1, and we would like to ease this burden on Doctors, as well as provide Patients with the necessary medical knowledge to make informed decisions of choosing their medication.
+Our project aims to to reduce the number of unnecessary visits to Doctors in Singapore. An estimated ratio of Patients to Doctors in Singapore is 400:1, and we would like to ease this burden on Doctors, as well as provide Patients with the necessary medical knowledge to make informed decisions of choosing their medication.
 
-Our aim is to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
+We aim to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
 
 ## Getting Started
 
@@ -28,11 +28,11 @@ If you have the slightest doubt, please consult a Doctor or seek expert opinion.
 ## Authors
 About us: We are a group of 5 students belonging to the National University of Singapore.
 
-Developers:
+_Developers:_
 Jasmine Seah
 Nicholas Wan
 
-Design & medical information:
+_Design & Medical information:_
 Loh Jing Han
 Hong Kai
 Alfred Sim
