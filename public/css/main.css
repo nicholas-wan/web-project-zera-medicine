@@ -6,12 +6,9 @@
 .icon-black{
   color:black;
 }
-
-
 .-autocomplete-container {
   margin-top:30px;
 }
-
 
 .pricingdiv{
   display: flex;
@@ -28,8 +25,8 @@
   flex-direction: column;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  color: white;
-  background: #7c3ac9;
+  color: black;
+  background: white;
   position: relative;
   width: 250px; /* width of each table */
   margin-right: 10px; /* spacing between tables */
@@ -37,6 +34,8 @@
   transition: all .5s;
   float: left;
   margin: 2%;
+  border-left:5px solid purple;
+  box-shadow: 0 0 1px gray;
 }
 
 .pricingdiv ul.theplan:hover{ /* when mouse hover over pricing table */
@@ -56,10 +55,11 @@
   font-weight: bold;
   margin-top: 20px;
   text-transform: uppercase;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid black;
+  color:purple;
 }
 
-.pricingdiv ul.theplan:nth-of-type(2){
+/* .pricingdiv ul.theplan:nth-of-type(2){
   background: #e53499;
 }
 .pricingdiv ul.theplan1:nth-of-type(2){
@@ -72,9 +72,9 @@
 .pricingdiv ul.theplan1:nth-of-type(3){
   background: #7c3ac9 !important ;
 }
-.pricingdiv ul.theplan:last-of-type{ /* remove right margin in very last table */
+.pricingdiv ul.theplan:last-of-type{
   margin-right: 0;
-}
+} */
 
 /*very last LI within each pricing UL */
 .pricingdiv ul.theplan li:last-of-type{
@@ -82,13 +82,13 @@
 }
 
 .pricingdiv a.pricebutton{
-  background: white;
+  background: purple;
   text-decoration: none;
   padding: 10px;
   display: inline-block;
   margin: 10px auto;
   border-radius: 5px;
-  color: navy;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -132,6 +132,7 @@
   font-family:open;
   font-style:italic;
   margin-right:2000px;
+  color:purple;
 }
 @media screen and (min-width: 800px) {
   .chatbot-header{
@@ -143,4 +144,12 @@
   .-autocomplete-container{
     margin-left:45px;
   }
+}
+html, body{
+  max-width:100%;
+  overflow-x:hidden;
+  background-color:#F0F0F0;
+}
+.input-xlarge:hover{
+  color:purple;
 }
