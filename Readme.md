@@ -7,7 +7,7 @@ We aim to provide more information about Off-The-Counter (Non-prescription) drug
 
 No installation or downloads are required!
 Visit our telegram bot at for medical advice,
-then proceed to our [Web Application](www.zera.herokuapp.com/home) to select the best medication for your needs!
+then proceed to our [Web Application](http://zera.herokuapp.com/home) to select the best medication for your needs!
 
 
 ## Built With
