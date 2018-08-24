@@ -82,7 +82,7 @@ Template.read.events({
         if (err) console.error(err);
         else {
           let keys = ['Product_Name', 'Price', 'Amount', 'Active_ingredients', 'Description',
-            'Special_caution', 'Contraindication'];
+            'Caution', 'Contraindication'];
 
           var list = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], { header: 1 });
           for (var i = 1; i < list.length; i++) {
@@ -307,11 +307,7 @@ Template.ingredientlist.helpers({
     M.toast({ html: this.Product_Name + " has been removed." });
   }
 });
-Template.ingredientlist.helpers({
-  completedelete(){
-    Ingredients.remove({})
-  }
-})
+
 Template.ingredientlist.events({
   "click .ingredientdelete": function (e, tmpl) {
     if (!confirm("Are you sure? This record will be removed permanently.")) {

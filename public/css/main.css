@@ -16,7 +16,11 @@
   justify-content: center;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
-
+@media all and (max-width: 600px){
+  .theplan{
+    width:100% !important;
+  }
+}
 .pricingdiv ul.theplan{
   list-style: none;
   margin: 0;
@@ -89,11 +93,12 @@
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
+  font-weight:bold;
 }
 
 @media only screen and (max-width: 800px) {
   .pricingdiv ul.theplan{
-    border-radius: 0;
+    /* border-radius: 0; */
     width: 100%;
     margin-right: 0;
   }
@@ -157,3 +162,8 @@ html, body{
     content:"\a";
     white-space:pre;
 } */
+@media all and (max-width: 600px){
+  .activeingredient{
+    width:100% !important;
+  }
+}
