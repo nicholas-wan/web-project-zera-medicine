@@ -94,6 +94,8 @@
   color: white;
   text-transform: uppercase;
   font-weight:bold;
+  width:100%;
+  text-align:center;
 }
 
 @media only screen and (max-width: 800px) {
