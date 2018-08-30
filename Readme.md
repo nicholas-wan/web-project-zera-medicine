@@ -3,7 +3,7 @@ Our project aims to to reduce the number of unnecessary visits to Doctors in Sin
 
 We aim to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
 
-## Getting Started 
+## Getting Started - Telegram Bot
 
 No installation or downloads are required! Follow these instructions to use our app!
 
@@ -78,7 +78,10 @@ Bot takes note of past medication taken. In event that it was useful in past app
   </kbd>
 </p>
 
-  
+## User Guide - Web Application
+After visiting the Telegram bot for advice, visit the web application to compare Active Ingredients and Products. 
+You may access the web application here [a Zera](http://zera.herokuapp.com/home)
+
   
 ## Built With
 * [Dialogflow](https://dialogflow.com/) - Framework for chatbot
