@@ -8,7 +8,7 @@ We aim to provide more information about Off-The-Counter (Non-prescription) drug
 No installation or downloads are required! Follow these instructions to use our app!
 
 ## Step 1a:
-Locate the telegram bot from our website
+Locate the telegram bot from our website.
 <p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png">
@@ -16,7 +16,7 @@ Locate the telegram bot from our website
 </p>
 
 ## Step 1b: 
-OR Locate the telegram bot from Telegram
+OR Locate the telegram bot from Telegram.
 <p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832122-22771b80-ac5c-11e8-8068-239233f46f21.png">
@@ -32,7 +32,7 @@ Chat with ZeraBot about your health situation and how you are feeling. Start the
 </p>
  
 ## Step 2b: 
-Response types vary between free text and buttons	
+Response types vary between free text and buttons.
 <p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832129-29059300-ac5c-11e8-954d-ca90426f11fd.png">
@@ -40,7 +40,7 @@ Response types vary between free text and buttons
 </p>
 
 ## Step 2c: 
-For expected numeric response, both alphabet and digits are accepted
+For expected numeric response, both alphabet and digits are accepted.
 <p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832137-302ca100-ac5c-11e8-9734-be35b939d6ca.png">
@@ -56,7 +56,7 @@ Once sufficient information is collected to draw an assessment, bot verifies if 
 </p>
 
 ## Step 2e: 
-Disclaimer that bot’s assessment is preliminary and should be no means be taken as the only source of opinion
+Disclaimer that bot’s assessment is preliminary and should be no means be taken as the only source of opinion.
 <p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832144-39b60900-ac5c-11e8-962f-c22aa7d9b4f5.png"> 
@@ -72,7 +72,8 @@ Ends the conversation with product recommendation and link to website, where use
 </p>
 
 ## Step 2g: 
-Bot takes note of past medication taken. In event that it was useful in past applications, bot will recommend the same product. Else, it will filter out this product and other products which share the same active ingredient.<p align="center">
+Bot takes note of past medication taken. In event that it was useful in past applications, bot will recommend the same product. Else, it will filter out this product and other products which share the same active ingredient.
+<p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832156-45a1cb00-ac5c-11e8-8d07-1a9fa4a2bb02.jpg"> 
   </kbd>
@@ -139,14 +140,10 @@ Compare all the information and make your choice!
 </p>
 
 
-
-
-
-
-
   
 ## Built With
 * [Dialogflow](https://dialogflow.com/) - Framework for Telegram Bot
+* [FireBase](https://firebase.google.com/) - Database for Telegram Bot
 * [MeteorJS](https://www.meteor.com/) - Framework for Web Application
 * [MongoDB](https://www.mongodb.com/) - Database for Web Application
 
