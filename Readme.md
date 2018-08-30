@@ -80,8 +80,16 @@ Bot takes note of past medication taken. In event that it was useful in past app
 
 ## User Guide - Web Application
 After visiting the Telegram bot for advice, visit the web application to compare Active Ingredients and Products. 
-You may access the web application here [Zera](http://zera.herokuapp.com/home)
-<a href= "zera.herokuapp.com/home" target="__blank"> Zera </a>
+
+## Step 1:
+You may access the web application here [Zera](http://zera.herokuapp.com/home) or from the Telegram Bot.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833439-aaf7bb00-ac60-11e8-8737-3ba5597754ec.PNG">
+  </kbd>
+</p>
+
+
 
   
 ## Built With
