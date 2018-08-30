@@ -8,7 +8,7 @@ We aim to provide more information about Off-The-Counter (Non-prescription) drug
 No installation or downloads are required! Follow these instructions to use our app!
 Step 1: Locate the telegram bot:
 <p align="center">
-  <img width="300" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png">
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png">
 </p>
 ## Built With
 * [Dialogflow](https://dialogflow.com/) - Framework for chatbot
