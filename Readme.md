@@ -109,7 +109,7 @@ Search by Symptom.
 View the information of the Active Ingredient searched.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833443-ad5a1500-ac60-11e8-81fd-a9b07ffd8da9.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44837012-0b8bf580-ac6b-11e8-9220-feea4199eec8.PNG">
   </kbd>
 </p>
 
@@ -117,7 +117,7 @@ View the information of the Active Ingredient searched.
 Search additional Active Ingredients to compare them.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833445-b0550580-ac60-11e8-9276-b3b2140947b3.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44837013-0b8bf580-ac6b-11e8-88a1-b9f83db463c7.PNG">
   </kbd>
 </p>
 
@@ -125,7 +125,7 @@ Search additional Active Ingredients to compare them.
 Compare up to 3 Active Ingredients. If you wish to, you may remove some of them to make space for other Active Ingredients. If you wish to view the products with that Active Ingredient, simply click View Products.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833446-b0550580-ac60-11e8-9939-1087701e2342.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44837017-0c248c00-ac6b-11e8-8434-89c606db723d.PNG">
   </kbd>
 </p>
 
