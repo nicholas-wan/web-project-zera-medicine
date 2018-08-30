@@ -10,7 +10,9 @@ No installation or downloads are required! Follow these instructions to use our 
 ## Step 1a:
 Locate the telegram bot from our website
 <p align="center">
+  <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png">
+  </kbd>
 </p>
 
 ## Step 1b: 
