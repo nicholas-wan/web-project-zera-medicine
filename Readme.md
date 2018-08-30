@@ -1,7 +1,6 @@
 # Zera - Introduction
-Our project aims to to reduce the number of unnecessary visits to Doctors in Singapore. An estimated ratio of Patients to Doctors in Singapore is 400:1, and we would like to ease this burden on Doctors, as well as provide Patients with the necessary medical knowledge to make informed decisions of choosing their medication.
+Our project aims to help the average Singaporean navigate through the plethora of OTC drugs that is available to them in the Pharmacy by individualising the range of drugs that they can use for their illness and help them make better decisions on which drug to use.
 
-We aim to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
 
 ## Getting Started - Telegram Bot
 
