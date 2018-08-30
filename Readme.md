@@ -51,7 +51,7 @@ For expected numeric response, both alphabet and digits are accepted
 Once sufficient information is collected to draw an assessment, bot verifies if collected information is correct. 
 <p align="center">
   <kbd>
-  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832137-302ca100-ac5c-11e8-9734-be35b939d6ca.png">
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832137-302ca100-ac5c-11e8-9734-be35b939d6ca.png"> 
   </kbd>
 </p>
   
