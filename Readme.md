@@ -3,13 +3,13 @@ Our project aims to to reduce the number of unnecessary visits to Doctors in Sin
 
 We aim to provide more information about Off-The-Counter (Non-prescription) drugs, in order to save the time and costs of consulting a Doctor. 
 
-## Getting Started
+## Getting Started 
 
-No installation or downloads are required!
-Visit our telegram bot at for medical advice,
-then proceed to our [Web Application](http://zera.herokuapp.com/home) to select the best medication for your needs!
+No installation or downloads are required! Follow these instructions to use our app!
+Step 1: Locate the telegram bot:
+![t1](https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png)
 
-![homepage](https://user-images.githubusercontent.com/36837883/44577347-6fbe3d80-a7c3-11e8-8482-e0e58b220ea4.JPG)
+
 
 ## Built With
 * [Dialogflow](https://dialogflow.com/) - Framework for chatbot
