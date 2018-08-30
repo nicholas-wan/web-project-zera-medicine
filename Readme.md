@@ -10,11 +10,27 @@ No installation or downloads are required! Follow these instructions to use our 
 ## Step 1a:
 Locate the telegram bot from our website
 <p align="center">
-  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png"></p>
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png">
+</p>
 
-## Step 1b: OR Locate the telegram bot from Telegram:
+## Step 1b: 
+OR Locate the telegram bot from Telegram
 <p align="center">
-  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832122-22771b80-ac5c-11e8-8068-239233f46f21.png"></p>
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832122-22771b80-ac5c-11e8-8068-239233f46f21.png">
+</p>
+  
+## Step 2a: 
+Chat with ZeraBot about your health situation and how you are feeling. Start the bot.
+<p align="center">
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832123-25720c00-ac5c-11e8-9223-ef68ece23659.png">
+</p>
+ 
+## Step 2b: 
+Response types vary between free text and buttons	
+<p align="center">
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832129-29059300-ac5c-11e8-954d-ca90426f11fd.png">
+</p>
+  
   
   
   
@@ -36,11 +52,11 @@ If you have the slightest doubt, please consult a Doctor or seek expert opinion.
 ## Authors
 About us: We are a group of 5 students belonging to the National University of Singapore.
 
-*Developers:*
+## Developers:
 Jasmine Seah
 Nicholas Wan
 
-*Design & Medical information:*
+## Design & Medical information:
 Loh Jing Han
 Hong Kai
 Alfred Sim
