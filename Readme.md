@@ -129,16 +129,8 @@ Compare up to 3 Active Ingredients. If you wish to, you may remove some of them 
   </kbd>
 </p>
 
-## Step 4a:
+## Step 4:
 A list of products containing that Active Ingredient in Singapore is shown.
-<p align="center">
-  <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833447-b0ed9c00-ac60-11e8-9145-ada7014fe8c0.PNG">
-  </kbd>
-</p>
-
-
-## Step 4b:
 Compare all the information and make your choice!
 <p align="center">
   <kbd>
