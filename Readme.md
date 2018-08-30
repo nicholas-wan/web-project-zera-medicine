@@ -154,9 +154,9 @@ Compare all the information and make your choice!
 
   
 ## Built With
-* [Dialogflow](https://dialogflow.com/) - Framework for chatbot
-* [MeteorJS](https://www.meteor.com/) - The web framework used
-* [MongoDB](https://www.mongodb.com/) - Dependency Management
+* [Dialogflow](https://dialogflow.com/) - Framework for Telegram Bot
+* [MeteorJS](https://www.meteor.com/) - Framework for Web Application
+* [MongoDB](https://www.mongodb.com/) - Database for Web Application
 
 ## Contributing
 
