@@ -85,7 +85,7 @@ After visiting the Telegram bot for advice, visit the web application to compare
 You may access the web application [here](http://zera.herokuapp.com/home), or from the Telegram Bot.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833439-aaf7bb00-ac60-11e8-8737-3ba5597754ec.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44835625-573ca000-ac67-11e8-93bf-04a5d710c68a.PNG">
   </kbd>
 </p>
 
