@@ -56,34 +56,28 @@ Once sufficient information is collected to draw an assessment, bot verifies if 
 </p>
 
 ## Step 2e: 
-Disclaimer that bot’s assessment is preliminary and should be no means be taken as the only source of opinion<p align="center">
-  <kbd>
-  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832141-36228200-ac5c-11e8-946f-b0290ca78cbb.png"> 
-  </kbd>
-</p>
-## Step 2f: 
-Ends the conversation with product recommendation and link to website, where user can find out more about each product.<p align="center">
+Disclaimer that bot’s assessment is preliminary and should be no means be taken as the only source of opinion
+<p align="center">
   <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832144-39b60900-ac5c-11e8-962f-c22aa7d9b4f5.png"> 
+  </kbd>
+</p>
+
+## Step 2f: 
+Ends the conversation with product recommendation and link to website, where user can find out more about each product.
+<p align="center">
+  <kbd>
+  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832150-3de22680-ac5c-11e8-8966-6b5ceb30d6cb.png"> 
   </kbd>
 </p>
 
 ## Step 2g: 
 Bot takes note of past medication taken. In event that it was useful in past applications, bot will recommend the same product. Else, it will filter out this product and other products which share the same active ingredient.<p align="center">
   <kbd>
-  <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832150-3de22680-ac5c-11e8-8966-6b5ceb30d6cb.png"> 
-  </kbd>
-</p>
-
-## Step 2h: 
-Once sufficient information is collected to draw an assessment, bot verifies if collected information is correct. 
-<p align="center">
-  <kbd>
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832156-45a1cb00-ac5c-11e8-8d07-1a9fa4a2bb02.jpg"> 
   </kbd>
 </p>
-  
-  
+
   
   
 ## Built With
