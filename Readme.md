@@ -93,7 +93,7 @@ You may access the web application [here](http://zera.herokuapp.com/home), or fr
 Search by Active Ingredients.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833441-acc17e80-ac60-11e8-88e9-2c5d27810915.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44836211-e26a6580-ac68-11e8-880d-e5c11f94ce84.PNG">
   </kbd>
 </p>
 
@@ -101,7 +101,7 @@ Search by Active Ingredients.
 Search by Symptom.
 <p align="center">
   <kbd>
-  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833442-acc17e80-ac60-11e8-9950-81aa9c96a054.PNG">
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44836212-e302fc00-ac68-11e8-982d-9facd3c8f153.PNG">
   </kbd>
 </p>
 
