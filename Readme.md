@@ -82,12 +82,73 @@ Bot takes note of past medication taken. In event that it was useful in past app
 After visiting the Telegram bot for advice, visit the web application to compare Active Ingredients and Products. 
 
 ## Step 1:
-You may access the web application here [Zera](http://zera.herokuapp.com/home) or from the Telegram Bot.
+You may access the web application [here](http://zera.herokuapp.com/home), or from the Telegram Bot.
 <p align="center">
   <kbd>
   <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833439-aaf7bb00-ac60-11e8-8737-3ba5597754ec.PNG">
   </kbd>
 </p>
+
+## Step 2a:
+Search by Active Ingredients.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833441-acc17e80-ac60-11e8-88e9-2c5d27810915.PNG">
+  </kbd>
+</p>
+
+## Step 2b:
+Search by Symptom.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833442-acc17e80-ac60-11e8-9950-81aa9c96a054.PNG">
+  </kbd>
+</p>
+
+## Step 3a:
+View the information of the Active Ingredient searched.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833443-ad5a1500-ac60-11e8-81fd-a9b07ffd8da9.PNG">
+  </kbd>
+</p>
+
+## Step 3b:
+Search additional Active Ingredients to compare them.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833445-b0550580-ac60-11e8-9276-b3b2140947b3.PNG">
+  </kbd>
+</p>
+
+## Step 3c:
+Compare up to 3 Active Ingredients. If you wish to, you may remove some of them to make space for other Active Ingredients. If you wish to view the products with that Active Ingredient, simply click View Products.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833446-b0550580-ac60-11e8-9939-1087701e2342.PNG">
+  </kbd>
+</p>
+
+## Step 4a:
+A list of products containing that Active Ingredient in Singapore is shown.
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833447-b0ed9c00-ac60-11e8-9145-ada7014fe8c0.PNG">
+  </kbd>
+</p>
+
+
+## Step 4b:
+Compare all the information and make your choice!
+<p align="center">
+  <kbd>
+  <img width="600" height="auto" src="https://user-images.githubusercontent.com/36837883/44833448-b0ed9c00-ac60-11e8-8e4c-5e9abac8c4d8.PNG">
+  </kbd>
+</p>
+
+
+
+
 
 
 
