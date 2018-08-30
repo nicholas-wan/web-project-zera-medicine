@@ -7,11 +7,12 @@ We aim to provide more information about Off-The-Counter (Non-prescription) drug
 
 No installation or downloads are required! Follow these instructions to use our app!
 
-### Step 1a: Locate the telegram bot from our website:
+## Step 1a:
+Locate the telegram bot from our website
 <p align="center">
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44831927-2eaea900-ac5b-11e8-8815-bebd46b026ee.png"></p>
 
-### Step 1b: OR Locate the telegram bot from Telegram:
+## Step 1b: OR Locate the telegram bot from Telegram:
 <p align="center">
   <img width="200" height="auto" src="https://user-images.githubusercontent.com/36837883/44832122-22771b80-ac5c-11e8-8068-239233f46f21.png"></p>
   
